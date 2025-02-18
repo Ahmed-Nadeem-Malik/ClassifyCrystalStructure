@@ -99,4 +99,4 @@ new_datapoint = np.array([[4.2, 2.0, 0.5]])  # example: [lattice size, bond leng
 new_datapoint_scaled = scaler.transform(new_datapoint)
 pred = model.predict(new_datapoint_scaled)
 predicted_class = np.argmax(pred)
-print(f"Predicted Class: {predicted_class}")
+print(f"Predicted Crystal Structure: {predicted_class}")
